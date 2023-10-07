@@ -83,7 +83,7 @@ function setup() {
     matrixGenerator(sizee, sizee, sizee / 8, sizee / 8, sizee / 8, sizee / 8, spawnerCount)
     createCanvas(matrix[0].length * side, matrix.length * side)
     background('#acacac')
-    snake=new Snake(Math.floor(sizee/4), 0)
+    snake = new Snake(Math.floor(sizee / 4), 0)
     for (var y = 0; y < matrix.length; y++) {
         for (var x = 0; x < matrix[y].length; x++) {
             if (matrix[y][x] == 1) {
@@ -176,7 +176,7 @@ function draw() {
     for (var i = 0; i < spawnerArr.length; i++) {
         spawnerArr[i].spawn()
     }
-    if(snake!=0){
+    if (snake != 0) {
         snake.generate()
     }
 }
